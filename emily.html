@@ -7,75 +7,7 @@
 
 <link rel="stylesheet" type="text/css" href="emily.css">
 
-<form id="regForm" action="form_submit.php" method="post">
-
-	<!-- Circles which indicates the steps of the form: -->
-<div style="text-align:center;margin-top:40px;">
-  <span class="step"></span>
-  <span class="step"></span>
-  <span class="step"></span>
-  <span class="step"></span>
-  <span class="step"></span>
-  <span class="step"></span>
-  <span class="step"></span>
-  <span class="step"></span>
-  <span class="step"></span>
-  <span class="step"></span>
-</div>
-<div class="question">
-
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname"><br>
-  <h1>Manners In our Time:</h1>
-
-<h2>Welcome to a short survey.</h2>
-
-<h3>Please answer as truthfully and completely as possible, remember, honesty and candor are hallmarks of the gentle person.</h3>
-</div> 
-<div class="question">
-<h4>1. Expectoration<br>
-	Spitting is allowable:</h4>
-
-  <label class="container" id="a1">A: As Needed
-  <input type="radio" name="q1" value="a1">
-  <span class="checkmark"></span></label><br>
-
-  <label class="container" id="a2">B: Into a Spitoon
-  <input type="radio" name="q1" value="a2">
-  <span class="checkmark"></span></label><br>
-
-  <label class="container" id="a3">C: Not In Mixed Company
-  <input type="radio" name="q1" value="a3">
-  <span class="checkmark"></span></label><br>
-
-  <label class="container" id="a4">D: Never
-  <input type="radio" name="q1" value="a4">
-  <span class="checkmark"></span></label><br>
-</div>
-  <div style="overflow:auto;">
-  <div style="float:right;">
-    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-  </div>
-</div>
-
-</form>
-
-<div class="chat-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
-  	<div class="numbers"></div>
-
-    <label for="msg"><b></b></label>
-    <textarea autofocus placeholder="" name="msg" id="msg" required color="#66FF00"></textarea>
-
-  </form>
-</div>
-<div class="bug"></div>
-<script src="https://widget.flowxo.com/embed.js" data-fxo-widget="eyJ0aGVtZSI6IiM2N2MxOGUiLCJ3ZWIiOnsiYm90SWQiOiI1ZjE0Yzc5Zjk1Yjc2NTAwMGU4OGFhMDIiLCJ0aGVtZSI6IiM2N2MxOGUiLCJsYWJlbCI6Ik1vdGhlcmJvdCJ9LCJ3ZWxjb21lVGV4dCI6IkhleSB0aGVyZSEifQ==" async defer></script>
-
-	<script type="text/javascript" src="emily.js"></script>
+<button class="btn welcome" onclick="location.href='welcome.html'">welcome</button>
 
 </body>
 </html>

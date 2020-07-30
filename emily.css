@@ -1,4 +1,37 @@
-/*body {
+body {
+  background-color: black;
+      color: white;
+
+  font-family: Courier;
+      }
+
+.tab { margin-left: 40px; }
+
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  color: white;
+}
+
+/* On mouse-over */
+.btn:hover {background: #A9A9A9;}
+
+.welcome {
+  margin-left: 45%;
+  margin-right: 50%;
+  margin-bottom: 50%;
+  margin-top: 45%;}
+
+
+.continue {
+  margin-left: 40%;
+  margin-right: 50%;}
+
+  /*body {
   background-color: black;
       color: #66FF00;
       }
@@ -27,7 +60,7 @@
 }
 /* Style the form */
 #regForm {
-  background-color: #ffffff;
+  background-color: black;
   margin: 100px auto;
   padding: 40px;
   width: 70%;
@@ -51,6 +84,7 @@ input.invalid {
 /* Hide all steps by default: */
 .question {
   display: none;
+  background-color: black;
 }
 
 /* Hide all steps by default: */
@@ -99,6 +133,8 @@ input.invalid {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  color: white;
+  background-color: black;
 }
 
 /* Hide the browser's default radio button */
@@ -170,7 +206,7 @@ input.invalid {
   max-width: auto;
   height: 100%;
   padding: 10px;
-  background-color: #000000;
+  background-color: black;
 }
 
 /* Full-width textarea */
@@ -181,9 +217,9 @@ input.invalid {
   padding: 15px;
   margin: 5px 0 22px 0;
   border: none;
-  background: #000000;
+  background: black;
   resize: none;
-  color: #66FF00;
+  color: white;
   font-weight: bold;
   text-align: right;
   height: 100%;
@@ -191,7 +227,7 @@ input.invalid {
 
 /* When the textarea gets focus, do something */
 .form-container textarea:focus {
-  background-color: #000000;
+  background-color: black;
   outline: none;
   color: #66FF00;
 }

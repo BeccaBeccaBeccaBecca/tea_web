@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<main id="main"></main>
+<body id="body">
+
+<link rel="stylesheet" type="text/css" href="emily.css">
+<p>
+<h2>
+“Life, like golf, is a game of integrity. If you are cheating you are only cheating yourself.”
+</h2>
+-Emily E-Diquette
+</p>
+Please answer these questions:
+<form id="regForm" action="form_submit.php" method="post">
+
+	<!-- Circles which indicates the steps of the form: -->
+<div style="text-align:center;margin-top:40px;">
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+</div>
+<div class="question">
+<h4>1. Are you alone?</h4>
+
+  <label class="container" id="a1">yes
+  <input type="radio" name="q1" value="a1">
+  <span class="checkmark"></span></label><br>
+
+  <label class="container" id="a2">no
+  <input type="radio" name="q1" value="a2">
+  <span class="checkmark"></span></label><br>
+</div>
+
+<div class="question">
+<h4>2. Are you comfortable?</h4>
+
+  <label class="container" id="a1">yes
+  <input type="radio" name="q1" value="a1">
+  <span class="checkmark"></span></label><br>
+
+  <label class="container" id="a2">no
+  <input type="radio" name="q1" value="a2">
+  <span class="checkmark"></span></label><br>
+</div>
+
+<div class="question">
+<h4>3. Is it quiet?</h4>
+
+  <label class="container" id="a1">yes
+  <input type="radio" name="q1" value="a1">
+  <span class="checkmark"></span></label><br>
+
+  <label class="container" id="a2">no
+  <input type="radio" name="q1" value="a2">
+  <span class="checkmark"></span></label><br>
+</div>
+
+<div class="question">
+<h4>4. Are your phone and oculus rift within reach?</h4>
+
+  <label class="container" id="a1">yes
+  <input type="radio" name="q1" value="a1">
+  <span class="checkmark"></span></label><br>
+
+  <label class="container" id="a2">no
+  <input type="radio" name="q1" value="a2">
+  <span class="checkmark"></span></label><br>
+</div>
+
+<div class="question">
+<h4>5. Are the lights out?</h4>
+
+  <label class="container" id="a1">yes
+  <input type="radio" name="q1" value="a1">
+  <span class="checkmark"></span></label><br>
+
+  <label class="container" id="a2">no
+  <input type="radio" name="q1" value="a2">
+  <span class="checkmark"></span></label><br>
+</div>
+<div class="question">
+<h4>click on begin coursework to begin</h4>
+</div>
+  <div style="overflow:auto;">
+  <div style="float:right;">
+    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+  </div>
+</div>
+
+</form>
+
+	<script type="text/javascript" src="emily.js"></script>
+
+<button class="btn begin" onclick="location.href='landing.html'">begin coursework</button>
+
+</body>
+</html>

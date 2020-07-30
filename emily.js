@@ -149,7 +149,7 @@ function showTab(n) {
     document.getElementById("prevBtn").style.display = "inline";
   }
   if (n == (x.length - 1)) {
-    document.getElementById("nextBtn").innerHTML = "Submit";
+    document.getElementById("nextBtn").style.display = "none";
   } else {
     document.getElementById("nextBtn").innerHTML = "Next";
   }
@@ -275,7 +275,7 @@ function validateForm() {
      //console.log(y[i].type);
       if(y[i].type == "radio"){
         isRadio = true;
-        console.log(y[i].innerText)
+        console.log(y[i].innerText);
         if(y[i].checked == true){
           console.log(y[i].value);
           answer = document.getElementById(y[i].value).innerText;
