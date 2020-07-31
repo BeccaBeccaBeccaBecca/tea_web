@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<main id="main"></main>
+<body id="body">
+
+<link rel="stylesheet" type="text/css" href="grossbot.css">
+
+<div class="banner-container">
+<img id="banner1" src="gossip.png" alt="Italian Trulli" style="width:300px;height:100px;">
+<img id="banner2" src="gossip1.png" alt="Italian Trulli" style="width:300px;height:100px;">
+</div>
+<br>
+<div class="side-container">
+<img id="conspiracy1" src="conspiracy1.png" alt="Italian Trulli" style="width:200px;height:300px;">
+<img id="conspiracy2" src="conspiracy2.png" alt="Italian Trulli" style="width:200px;height:300px;">
+</div>
+<br>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <div class="numbers"></div>
+
+    <label for="msg"><b></b></label>
+    <textarea autofocus placeholder="" name="msg" id="msg" required color="#66FF00"></textarea>
+
+  </form>
+</div>
+<br>
+<!-- Trigger/Open The Modal -->
+<button class="btn fake" id="myBtn" style="display:inline;">continue</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+<div class="modal-content">
+  <div class="modal-header">
+    <span class="close">&times;</span>
+    <h2>Leaving so soon??</h2>
+  </div>
+  <div class="modal-body">
+    <p>Remember, anonymity is a gift on the internet</p>
+    <p>You can say whatever you want to people...</p>
+  </div>
+  <div class="modal-footer">
+    <h3></h3>
+  </div>
+</div>
+
+</div>
+
+
+<button class="btn begin" id="btn" onclick="location.href='civildiscourse.html'" style="display:inline;">continue</button>
+
+<script type="text/javascript" src="grossbot.js"></script>
+</body>
+</html>

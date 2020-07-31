@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<main id="main"></main>
+<body id="body">
+
+<link rel="stylesheet" type="text/css" href="survey.css">
+<p>
+<h2>
+Please enter a haiku:
+</h2>
+</p>
+<form id="regForm" action="form_submit.php" method="post">
+
+	<!-- Circles which indicates the steps of the form: -->
+
+<div class="question">
+
+  <input class="haiku" type="text" name="l1">
+  <label class="container" id="l1">0</label>
+  <input class="haiku" type="text" name="l2">
+  <label class="container" id="l2">0</label>
+  <input class="haiku" type="text" name="l3">
+  <label class="container" id="l3">0</label>
+
+</div>
+
+
+</form>
+
+
+<button class="btn begin" id="button" onclick="location.href='teaparty.html'">next level</button>
+
+
+  <script type="text/javascript" src="survey.js"></script>
+</body>
+</html>

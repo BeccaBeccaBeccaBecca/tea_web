@@ -1,6 +1,6 @@
 body {
-  background-color: black;
-      color: white;
+  background-color: white;
+      color: black;
 
   font-family: Courier;
       }
@@ -10,11 +10,11 @@ body {
 .btn {
   border: none;
   background-color: inherit;
-  padding: 14px 28px;
+  padding: 14px 28px; 
   font-size: 16px;
   cursor: pointer;
-  display: inline-block;
-  color: white;
+  display: none;
+  color: black;
 }
 
 /* On mouse-over */
@@ -63,7 +63,7 @@ body {
 }
 /* Style the form */
 #regForm {
-  background-color: black;
+  background-color: white;
   margin: 100px auto;
   padding: 40px;
   width: 70%;
@@ -87,7 +87,7 @@ input.invalid {
 /* Hide all steps by default: */
 .question {
   display: none;
-  background-color: black;
+  background-color: white;
 }
 
 /* Hide all steps by default: */
@@ -99,7 +99,6 @@ input.invalid {
 .reflexQuestions {
   display: none;
 }
-
 /* Make circles that indicate the steps of the form: */
 .step {
   height: 15px;
@@ -136,8 +135,8 @@ input.invalid {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
 }
 
 /* Hide the browser's default radio button */

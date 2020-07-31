@@ -5,12 +5,11 @@
 <main id="main"></main>
 <body id="body">
 
-<link rel="stylesheet" type="text/css" href="emily.css">
+<link rel="stylesheet" type="text/css" href="survey.css">
 <p>
 <h2>
-“Life, like golf, is a game of integrity. If you are cheating you are only cheating yourself.”
+LEVEL TWO
 </h2>
--Emily E-Diquette
 </p>
 Please answer these questions:
 <form id="regForm" action="form_submit.php" method="post">
@@ -83,8 +82,8 @@ Please answer these questions:
   <input type="radio" name="q1" value="a2">
   <span class="checkmark"></span></label><br>
 </div>
-<div class="question">
-<h4>click on begin coursework to begin</h4>
+<div class="question"  id="lastq">
+<h4>please open the chat window</h4>
 </div>
   <div style="overflow:auto;">
   <div style="float:right;">
@@ -95,9 +94,12 @@ Please answer these questions:
 
 </form>
 
-	<script type="text/javascript" src="emily.js"></script>
 
-<button class="btn begin" onclick="location.href='level1.html'">begin coursework</button>
+<button class="btn begin" id="button" onclick="location.href='level3.html'">next level</button>
+<div class="motherbot" id="bot">
+<script src="https://widget.flowxo.com/embed.js" data-fxo-widget="eyJ0aGVtZSI6IiM2N2MxOGUiLCJ3ZWIiOnsiYm90SWQiOiI1ZjE0Yzc5Zjk1Yjc2NTAwMGU4OGFhMDIiLCJ0aGVtZSI6IiM2N2MxOGUiLCJsYWJlbCI6Ik1vdGhlcmJvdCJ9LCJ3ZWxjb21lVGV4dCI6IkhleSB0aGVyZSEifQ==" async defer></script>
+</div>
 
+  <script type="text/javascript" src="survey.js"></script>
 </body>
 </html>
