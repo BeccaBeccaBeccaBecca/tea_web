@@ -15,24 +15,26 @@ body {
   cursor: pointer;
   display: inline-block;
   color: white;
+  position: relative;
 }
 
 /* On mouse-over */
 .btn:hover {background: #A9A9A9;}
 
 .welcome {
-  margin-left: 45%;
-  margin-right: 50%;
-  margin-bottom: 50%;
-  margin-top: 45%;}
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+transform: translate(-50%, -50%)}
 
 
 .continue {
-  margin-left: 40%;
-  margin-right: 50%;}
-.continue {
-  margin-left: 40%;
-  margin-right: 50%;}
+  display: block;
+  left: 50%;
+  margin-right: -50%;
+transform: translate(-50%, -50%)}
 
   /*body {
   background-color: black;
