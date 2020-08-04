@@ -150,6 +150,7 @@ function showTab(n) {
   }
   if (n == (x.length - 1)) {
     document.getElementById("nextBtn").style.display = "none";
+    document.getElementById("begin").style.display = "inline";
   } else {
     document.getElementById("nextBtn").innerHTML = "Next";
   }
