@@ -27,6 +27,9 @@ if(!isset($_SESSION['name'])){
 else{
 
 ?>
+<br>
+You will now speak with someone about this viewing in the CHAT WINDOW below. <br>Remember, a polite and appropriate conversation avoids these topics: MONEY, POLITICS, GENDER & RACE. Asking questions, expressing generally accepted opinions and discussing the weather are all perfectly respectable options in conversation. <br>Remember, long answers fueled by emotion, strong personal opinions or criticism are discouraged.
+<br><br>
 <div id="wrapper">
     <div id="menu">
         <p class="welcome">Welcome, <b><?php echo $_SESSION['name']; ?></b></p>
@@ -48,6 +51,10 @@ else{
         <input name="usermsg" type="text" id="usermsg" size="63" />
         <input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
     </form>
+</div>
+<div class="motherbot" id="bot">
+<script src="https://widget.flowxo.com/embed.js" data-fxo-widget="eyJ0aGVtZSI6IiM2N2MxOGUiLCJ3ZWIiOnsiYm90SWQiOiI1ZjE0Yzc5Zjk1Yjc2NTAwMGU4OGFhMDIiLCJ0aGVtZSI6IiM2N2MxOGUiLCJsYWJlbCI6Ik1vdGhlcmJvdCJ9LCJ3ZWxjb21lVGV4dCI6IkhleSB0aGVyZSEifQ==" async defer></script>
+<!-- https://code.tutsplus.com/tutorials/how-to-create-a-simple-web-based-chat-application--net-5931 -->
 </div>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
 <script type="text/javascript">
@@ -109,7 +116,7 @@ if(isset($_GET['logout'])){
     fclose($fp);
      
     session_destroy();
-    header("Location: index.php"); //Redirect the user
+    header("Location: level5.html"); //Redirect the user
 }   
 ?>
 </body>

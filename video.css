@@ -1,0 +1,42 @@
+body {
+  background-color: black;
+      color: white;
+
+  font-family: Courier;
+      }
+
+.tab { margin-left: 40px; }
+
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  color: white;
+  position: relative;
+}
+
+.continue {
+  position: absolute;
+  top: 350px;
+  display: block;
+  left: 50%;
+  margin-right: -50%;
+transform: translate(-50%, -50%)
+}
+
+/* On mouse-over */
+.btn:hover {background: #A9A9A9;}
+
+.video {
+  position: relative;
+}
+.iframe {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0%);
+}

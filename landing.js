@@ -1,27 +1,17 @@
 var i = 0;
 var txt = 'Chatbot!!'; /* The text */
 var speed = 50; /* The speed/duration of the effect in milliseconds */
-var score = 0;
-var answers = ["","", "", "", "", ""];
+
 var currentTab = 0; // Current tab is set to be the first tab (0)
-var reflexQuestion = 0;
-var reflexCountdown = 30;
-var reflexNextQuestion = false;
-var name;
-var answer;
-var acceptableAnswers = ['a', 'b', 'c', 'd'];
 var currentStep = 0;
 showTab(currentTab); // Display the current tab
+
+
 
 function showTab(n) {
   // This function will display the specified tab of the form ...
   var x = document.getElementsByClassName("question");
   x[n].style.display = "block";
-    console.log("hi");
-  console.log(x[n].getElementsByClassName("haiku"));
-  if(x[n].getElementsByClassName("haiku").length > 0){
-    handleHaiku();
-  }else{
   // ... and fix the Previous/Next buttons:
   if (n == 0) {
     document.getElementById("prevBtn").style.display = "none";
@@ -30,18 +20,13 @@ function showTab(n) {
   }
   if (n == (x.length - 1)) {
     document.getElementById("nextBtn").style.display = "none";
-    document.getElementById("bot").style.display = "inline";
-    document.getElementById("button").style.display = "inline";
+    document.getElementById("begin").style.display = "inline";
   } else {
-    document.getElementById("nextBtn").style.display = "inline";
     document.getElementById("nextBtn").innerHTML = "Next";
-    document.getElementById("button").style.display = "none";
-    document.getElementById("bot").style.display = "none";
   }
   // ... and run a function that displays the correct step indicator:
   fixStepIndicator(n)
-  console.log("hi");
-  console.log(x[n].getElementsByClassName("haiku"));
+  //console.log(x[n].getElementsByClassName("haiku"));
   if(x[n].getElementsByClassName("haiku").length > 0){
     handleHaiku();
   }
@@ -53,6 +38,17 @@ function showTab(n) {
     handleReflexes();
   }
 }
+
+function nextQuestion(){
+  var x = document.getElementsByClassName("reflexQuestions");
+
+  x[reflexQuestion].style.display = "none";
+  reflexQuestion ++;
+  x[reflexQuestion].style.display = "block";
+  if(reflexQuestion == x.length - 1){
+    document.getElementById("reflexBtn").style.display = "none";
+    reflexNextQuestion = true;
+  }
 }
 
 function nextPrev(n) {
@@ -65,13 +61,7 @@ function nextPrev(n) {
   // Increase or decrease the current tab by 1:
   currentTab = currentTab + n;
   // if you have reached the end of the form... :
-  console.log(currentTab);
-  console.log(x.length);
-  if(currentTab == x.length-1){
-    getScore(x);
-  }
   if (currentTab >= x.length) {
-    console.log("end");
     //...the form gets submitted:
     beginMatrix();
     //document.getElementById("regForm").submit();
@@ -99,7 +89,7 @@ function validateForm() {
         console.log(y[i].innerText);
         if(y[i].checked == true){
           console.log(y[i].value);
-          answers[currentTab] = document.getElementById(y[i].value).innerText;
+          answer = document.getElementById(y[i].value).innerText;
           radioCheck = true;
         }
       }
@@ -121,29 +111,10 @@ function validateForm() {
   // If the valid status is true, mark the step as finished and valid:
   if (valid) {
     document.getElementsByClassName("step")[currentTab].className += " finish";
-    //getScore(y);
   }
   return valid; // return the valid status
 }
 
-function getScore(x){
-  score = 0;
-  console.log("coretimea");
-  var y;
-  for (var i = x.length - 1; i >= 0; i--) {
-    console.log(answers[i]);
-    if(answers[i].includes("yes")){
-      score++;
-    }
-  }
-  var ex = document.getElementById("lastq").innerText.split("\n");
-  console.log(ex[0]);
-  console.log(ex[1]);
-  console.log(ex);
-  document.getElementById("lastq").innerText = "score: " + score + "\nclick on next level";
-console.log(score);
-
-}
 function fixStepIndicator(n) {
   // This function removes the "active" class of all steps...
   var i, x = document.getElementsByClassName("step");
@@ -152,15 +123,4 @@ function fixStepIndicator(n) {
   }
   //... and adds the "active" class to the current step:
   x[n].className += " active";
-}
-
-
-
-
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
-
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
 }
